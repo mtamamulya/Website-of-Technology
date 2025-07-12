@@ -1,97 +1,132 @@
 body {
-    font-family: Arial,  sans-serif; /* keluarga font */
-    font-size: 12px; /* Ukuran font utama pada tag <p></p> */
-    background-color: #e0d14494; /* Warna latar belakang laman web */
-    color: #272727; /* Warna teks */ 
-    border:none;
-    border-radius: 7px;
-    padding: 20px; /* Ruang di sekitar konten */
-    margin: 0 auto; /* Pusatkan laman web */
-    max-width: auto; /* Lebar maksimum laman web */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut di sekitar laman web */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #e0d14494;
+    color: #272727;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-button {
-    background-color: #7a722f; /* Warna latar belakang butang */
-    color: white; /* Warna teks butang */
-    border: none; /* Tiada sempadan */
-    border-radius: 10px; /* Sudut bulat pada butang */
-    padding: 5px 20px; /* Ruang dalam butang */
-    text-align: center; /* Pusatkan teks dalam butang */
-    text-decoration: none; /* Tiada garis bawah pada teks */
-    display: inline-block; /* Butang sebagai elemen blok sebaris */
-    font-size: 16px; /* Ukuran font butang */
-    margin: 4px 2px; /* Margin di sekitar butang */
-    cursor: pointer; /* Tunjuk kursor tangan apabila melayang di atas butang */
+
+.slogo {
+    font-size: 30px;
+    font-weight: bold;
 }
-button:hover {
-    background-color: #d1c386; /* Warna latar belakang butang apabila melayang */
-    color: #7c6464; /* Warna teks butang apabila melayang */
-}
+
 header {
-    background-color: #e4d575; /* Warna latar belakang header */
-    padding: 50px; /* Ruang dalam header */
-    border-top-left-radius: 10px; /* Sudut bulat di kiri atas header */
-    border-top-right-radius: 10px; /* Sudut bulat di kanan atas header */
-    box-shadow: 0 2px 4px rgba(233, 139, 139, 0.1); /* Bayangan lembut di bawah header */
-    color: #fffef3; /* Warna tajuk (header) dalam elemen <div> */
-    font-size: 30px; /* Ukuran font tajuk (header) dalam elemen <div> */
-    font-weight: bold; /* Tebal font tajuk (header) dalam elemen <div> */
-    text-align: center; /* Pusatkan teks dalam elemen <div> */
-    font-family: Georgia, serif; /* Keluarga font yang digunakan di tajuk (header) dalam elemen <div> */
+    background-color: #e4d575;
+    padding: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 4px rgba(233, 139, 139, 0.1);
+    color: #fffef3;
+    text-align: center;
+    font-family: Georgia, serif;
 }
+
 nav {
     background: #d4b53b;
     color: #fff;
     padding: 0.5px 0;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 5px;
     border-radius: 10px;
     padding: 10px 2px;
-
-
 }
+
+button {
+    background-color: #7a722f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d1c386;
+    color: #7c6464;
+}
+
 h1 {
-    color: #aca10e; /* Warna tajuk (header)*/
-    font-size: 18px; /* Ukuran font tajuk (header) */
-    font-family: Georgia, serif; /* Keluarga font yang digunakan di tajuk (header) */
+    color: #aca10e;
+    font-size: 18px;
+    font-family: Georgia, serif;
 }
-p {
-    font-size: 14px; /* Ukuran font untuk tag <p></p> */
-    line-height: 1.5; /* Jarak baris untuk tag <p></p> */
-    margin: 10px 0; /* Margin atas dan bawah untuk tag <p></p> */
-}
-img {
-    max-width: 100%; /* Pastikan imej tidak melebihi lebar elemen induknya */
-    height: auto; /* Tinggi imej automatik mengikut nisbah aspek */
-    border-radius: 10px; /* Sudut bulat pada imej */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan lembut di bawah imej */
 
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 h2 {
-    border: 2px solid #aca10e; /* Sempadan tebal pada tajuk (header) */
+    border: 2px solid #aca10e;
     border-radius: 7px;
     background-color: rgb(243, 197, 97);
-    list-style-type: none;
     display: inline-block;
-    font-size: 20px; /* Ukuran font untuk tajuk (header) */
+    font-size: 20px;
     padding: 5px;
     color: rgba(126, 78, 7, 0.932);
-    margin: 5px;
+    margin: 5px 0;
 }
+
 li {
-    font-size: 14px; /* Ukuran font untuk tag <p></p> */
-    line-height: 1.5; /* Jarak baris untuk tag <p></p> */
-    margin: 10px 0; /* Margin atas dan bawah untuk tag <p></p> */
-    list-style-type: number; /* Jenis senarai bernombor */
-    padding-left: 20px; /* Ruang di sebelah kiri untuk senarai */
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0;
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+/* Media Query untuk layar kecil (ponsel) */
+@media (max-width: 600px) {
+    header {
+        padding: 30px;
+    }
+
+    .slogo {
+        font-size: 22px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    button {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    h1, h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    p, li {
+        font-size: 13px;
+    }
 }
