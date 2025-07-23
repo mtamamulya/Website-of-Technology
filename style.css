@@ -24,11 +24,14 @@ button {
     cursor: pointer; /* Tunjuk kursor tangan apabila melayang di atas butang */
 }
 button:hover {
+    animation: color-hover 3s infinite; /* Animasi perubahan warna teks apabila melayang */
     background-color: #d1c386; /* Warna latar belakang butang apabila melayang */
     color: #7c6464; /* Warna teks butang apabila melayang */
+
 }
 header {
     animation: color-change 3s infinite; /* Animasi perubahan warna teks */
+    font-size: 40px;
     background-color: #e4d575; /* Warna latar belakang header */
     padding: 50px; /* Ruang dalam header */
     border-top-left-radius: 10px; /* Sudut bulat di kiri atas header */
@@ -60,16 +63,12 @@ nav ul li {
 
 
 }
-h1 {
-    
-    color: #aca10e; /* Warna tajuk (header)*/
-    font-size: 18px; /* Ukuran font tajuk (header) */
-    font-family: Georgia, serif; /* Keluarga font yang digunakan di tajuk (header) */
-}
+
+
 p {
     font-size: 14px; /* Ukuran font untuk tag <p></p> */
     line-height: 1.5; /* Jarak baris untuk tag <p></p> */
-    margin: 10px 0; /* Margin atas dan bawah untuk tag <p></p> */
+    margin: 5px 0; /* Margin atas dan bawah untuk tag <p></p> */
 }
 img {
     max-width: 100%; /* Pastikan imej tidak melebihi lebar elemen induknya */
@@ -106,20 +105,28 @@ iframe {
 }
 
 @keyframes color-change {
-
     0% {
-      color: rgb(255, 255, 255);
-
-      font-size: 175%;
+        color: rgb(255, 255, 255);
     }
-  
     50% {
-      color: rgb(255, 248, 209);
-      font-size: 200%;
+        color: rgb(246, 236, 181);
     }
-  
     100% {
-      color: rgb(241, 250, 181);
-      font-size: 230%;
+        color: rgb(170, 180, 109);
+    }
+}
+
+@keyframes color-hover {
+    0% {
+        color: rgb(255, 255, 255);
+        font-size: 16px ;
+    }
+    50% {
+        color: rgb(116, 112, 94);
+        font-size: 18px ;
+    }
+    100% {
+        color: rgb(0, 0, 0);
+        font-size: 20px ;
     }
 }
